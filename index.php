@@ -214,7 +214,7 @@
               Having any doubts regarding our services? Don't hesitate to reach us,
               our team of experts is here to help you.            
             </p>
-            <a href="#"><img src="images/instagramPng.png"></a>
+            <a class="w-100" href="#"><img src="images/instagramPng.png"></a>
           </div>
         </div>
       </div>
