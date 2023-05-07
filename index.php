@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +22,7 @@
 <div class="body">     
   <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#Home"><img src="images/Frame 1.png"></a>
+        <a class="navbar-brand" href=""><img src="images/frame1.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon "></span>
         </button>
@@ -32,21 +35,42 @@
                     <a class="nav-link fs-5" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-5 text-center" href="#">Contacts</a>
+                    <a class="nav-link fs-5 text-center" href="#contacts">Contacts</a>
                 </li>
+                <?php
+                  if(isset($_SESSION["useremail"]))
+                  {
+                ?>
                 <li class="nav-item">
-                    <a class="nav-link fs-5" href="#">Login</a>
+                    <a class="nav-link c-custom-iflogin fs-5" href="dashboard.php"><?php echo $_SESSION["useremail"]; ?></a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link c-custom-sign-up fs-5 px-4 py-2" href="#">Sign Up</a>
+                    <a class="nav-link c-custom-sign-up fs-5 px-4 py-2" href="php_includes/logout.php">LOGOUT</a>
                 </li>
             </ul>
+                <?php
+                  }
+                  else
+                  {
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="login.php">Login</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link c-custom-sign-up fs-5 px-4 py-2" href="signup.php">Sign Up</a>
+                </li>
+            </ul>
+              <?php
+                  }
+              ?>
         </div>
     </div>
 </nav>
-    <div id="mycarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="400000" data-bs-pause="hover">
+    <div id="mycarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -147,7 +171,7 @@
                 brighter future, come talk to us today."
               </p>
               <div class="text-center py-2">
-              <a class="fw-bold fs-6 px-4 py-2" href="#">Learn More >>></a>
+              <a class="fw-bold fs-6 px-4 py-2" href="#">Learn More &raquo;</a>
               </div>
           </div>
         </div>
@@ -207,7 +231,7 @@
       <div class="container">
         <div class="row d-grid">
           <div class="col-lg-12 col-md-12 col-sm-12 ">
-            <h2 style="color: white;" class="fs-1">Contact Us</h2>
+            <h2 style="color: white;" class="fs-1" id="contacts">Contact Us</h2>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12 c-custom-2-div-contacts">
             <p style="color: white;" class="fs-5">

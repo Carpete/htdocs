@@ -54,6 +54,19 @@
   background-color: #0b5ed7;
  }
 
+ .nav-item a{
+  padding-right: 20px;
+  color: #000000;
+ }
+
+ .c-custom-iflogin {
+  color: #000000;
+ }
+
+ .c-custom-iflogin:hover {
+  color: #000000;
+ }
+
 .nav-item, .nav-item a {
     padding-right: 20px;
     color: black;
@@ -67,7 +80,6 @@
 .nav-link{
     /*Navbar link custom*/
     font-size: 18px;
-    color: rgb(224,224,224);
 }
 
  .nav-item a:hover {
