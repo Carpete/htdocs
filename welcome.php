@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./dashboard.css">
+    <link rel="stylesheet" type="text/css" href="welcome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40cabe5444.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Document</title>
+    <title>Welcome</title>
 </head>
 <body>
 
@@ -37,31 +37,20 @@
                     </li>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                         </ul>
-                        </ul>
+                </ul>
             </div>
         </div>
-        <div class="col py-3 c-custom-main-page">
-        <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">IronLock Dashboard</a>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-          <a class="nav-link" href="#">
-          <i class="fa-solid fa-bell" style="color: #383636;"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-          <i class="fa-solid fa-bars" style="color: #373737;"></i>
-          </a>
-        </li>
-      </ul>
+        <div class="col py-3 c-custom-main-page center d-flex justify-content-center">
+            <?php
+                if(isset($_SESSION["useremail"]))
+                {
+            ?>
+            <h2 class="display-5">Welcome, <span><?php echo $_SESSION["useremail"]; ?></span></h2>
+            <?php
+                  }
+            ?>
+
     </div>
-    </nav>
-    <div>
-        
-    </div>
-  </div>
     </div>
     </div>
 </body> 

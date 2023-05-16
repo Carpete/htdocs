@@ -222,10 +222,12 @@
 
  }
 
- .c-custom-images-security  {
-  align-items: flex-start;
+ .c-custom-images-security {
+  align-items: flex;
   align-self: center;
   justify-items: center;
+  justify-content: center;
+
  }
 
  .mission { 
@@ -251,6 +253,8 @@
     margin-top: 4%;
     position: relative;
  }
+
+
 /*
  .slider {
   margin-bottom: 20px;

@@ -16,5 +16,5 @@ if(isset($_POST["submit"]))
     // Running error handlers and users signup
     $login->loginUser();
     // Redirect to dashboard.php
-    header("location: ../dashboard.php");
+    header("location: ../welcome.php");
 } 

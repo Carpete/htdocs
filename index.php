@@ -243,52 +243,6 @@
         </div>
       </div>
     </section>
-    <!--<section id="slider" class="pt-5">
-      <div class="container">
-        <div class="slider">
-          <div class="owl-carousel">
-            <div class="slider-card">
-              <div class="d-flex justify-content-center align-items-center mb-4">
-                <img src="images/fixed-deposit.jpg" alt="Image 1">
-              </div>
-              <h5 class="text-center">Hello</h5>
-              <p class="text-center p-4">Hello Three times</p>
-            </div>
-            <div class="slider-card">
-              <div class="d-flex justify-content-center align-items-center mb-4">
-                <img src="images/logo5.png" alt="Image 1">
-              </div>
-              <h5 class="text-center">Hello</h5>
-              <p class="text-center p-4">Hello Three times</p>
-            </div>
-            <div class="slider-card">
-              <div class="d-flex justify-content-center align-items-center mb-4">
-                <img src="images/logo5.png" alt="Image 1">
-              </div>
-              <h5 class="text-center">Hello</h5>
-              <p class="text-center p-4">Hello Three times</p>
-            </div>
-            <div class="slider-card">
-              <div class="d-flex justify-content-center align-items-center mb-4">
-                <img src="images/logo5.png" alt="Image 1">
-              </div>
-              <h5 class="text-center">Hello</h5>
-              <p class="text-center p-4">Hello Three times</p>
-            </div>
-            <div class="slider-card">
-              <div class="d-flex justify-content-center align-items-center mb-4">
-                <img src="images/logo5.png" alt="Image 1">
-              </div>
-              <h5 class="text-center">Hello</h5>
-              <p class="text-center p-4">Hello Three times</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  -->
-
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
